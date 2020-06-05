@@ -1,0 +1,19 @@
+# ログファイル
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 依存パッケージディレクトリ
+node_modules/
+
+# 環境変数ファイル
+.env
+
+# Nuxt.js
+.nuxt
+dist
+
+# エディター設定ファイル
+.idea

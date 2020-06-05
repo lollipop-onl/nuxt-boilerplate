@@ -12,7 +12,6 @@ simochee <a href="https://twitter.com/lollipop_onl">lollipop_onl</a> によるNu
 * Prettier
 * stylelint
 
-
 ## Licence
 
 MIT

@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Run fixpack
-        run: fixpack
+        run: yarn fixpack
       - name: Commit and Push
         run: |
           git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}

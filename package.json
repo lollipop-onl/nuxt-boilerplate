@@ -36,7 +36,10 @@
   "repository": "https://github.com/lollipop-onl/nuxt-boilerplate.git",
   "scripts": {
     "lint:css": "stylelint \"**/*.{css,sass,scss}\"",
-    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue ."
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue .",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.4.8",

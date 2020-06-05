@@ -8,6 +8,7 @@ on:
       - '**.tsx'
       - '**.vue'
       - package.json
+      - .github/workflows/type-check.yml
 
 jobs:
   build:

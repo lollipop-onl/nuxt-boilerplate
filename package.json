@@ -19,7 +19,7 @@
     "typescript"
   ],
   "scripts": {
-    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue .",
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue ."
   },
   "license": "MIT",
   "private": true,

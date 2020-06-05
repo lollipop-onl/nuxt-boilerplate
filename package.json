@@ -20,7 +20,7 @@
   ],
   "scripts": {
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue .",
-    "lint:css": "stylelint \"**/*.{css,scss}\""
+    "lint:css": "stylelint \"**/*.{css,sass,scss}\""
   },
   "license": "MIT",
   "private": true,

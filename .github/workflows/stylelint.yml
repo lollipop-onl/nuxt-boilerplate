@@ -1,14 +1,14 @@
-name: Lint check of JavaScript
+name: Lint check of CSS
 on:
   push:
     paths:
-      - '**.{js,jsx,ts,tsx,vue}'
-      - .eslintignore
-      - .eslintrc
+      - '**.{scss,sass,css,vue}'
+      - .stylelintignore
+      - .stylelintrc
 
 jobs:
   build:
-    name: ESLint
+    name: stylelint
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -18,8 +18,8 @@ jobs:
           node-version: 12
       - name: Install dependencies
         run: yarn install
-      - name: Run ESLint check
-        run: yarn run lint:js --fix --max-warnings 0
+      - name: Run stylelint check
+        run: yarn run lint:css --fix
       - name: Commit and Push
         run: |
           git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
@@ -28,7 +28,7 @@ jobs:
 
           if (git diff --shortstat | grep '[0-9]'); then \
             git add .; \
-            git commit -m "👕 Fixed auto-fixable ESLint errors by github-actions"; \
+            git commit -m "👕 Fixed auto-fixable stylelint errors by github-actions"; \
             git push origin HEAD:${GITHUB_REF}; \
           fi
         env:

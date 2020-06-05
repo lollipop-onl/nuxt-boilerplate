@@ -1,0 +1,24 @@
+{
+  "name": "@lollipop-onl/nuxt-boilerplate",
+  "description": "simochee によるNuxt.jsのボイラープレート",
+  "version": "0.0.0",
+  "author": {
+    "name": "simochee",
+    "email": "lollipop@simochee.net",
+    "url": "https://js.lollipop.onl"
+  },
+  "bugs": {
+    "url": "https://github.com/lollipop-onl/nuxt-boilerplate/issues",
+    "email": "lollipop@simochee.net"
+  },
+  "keywords": [
+    "eslint",
+    "nuxt",
+    "sass",
+    "stylelint",
+    "typescript"
+  ],
+  "license": "MIT",
+  "private": true,
+  "repository": "https://github.com/lollipop-onl/nuxt-boilerplate.git"
+}

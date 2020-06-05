@@ -2,9 +2,13 @@ name: Lint check of CSS
 on:
   push:
     paths:
-      - '**.{scss,sass,css,vue}'
+      - '**.scss'
+      - '**.sass'
+      - '**.css'
+      - '**.vue'
       - .stylelintignore
       - .stylelintrc
+      - .github/workflows/eslint.yml
 
 jobs:
   build:

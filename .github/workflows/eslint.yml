@@ -2,9 +2,14 @@ name: Lint check of JavaScript
 on:
   push:
     paths:
-      - '**.{js,jsx,ts,tsx,vue}'
+      - '**.js'
+      - '**.jsx'
+      - '**.ts'
+      - '**.tsx'
+      - '**.vue'
       - .eslintignore
       - .eslintrc
+      - .github/workflows/eslint.yml
 
 jobs:
   build:

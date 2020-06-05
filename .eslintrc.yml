@@ -1,0 +1,25 @@
+extends:
+  - '@nuxtjs/eslint-config-typescript'
+  - plugin:prettier/recommended
+  - prettier/@typescript-eslint
+parserOptions:
+  warnOnUnsupportedTypeScriptVersion: false
+rules:
+  # 分割代入時はキャメルケース以外の変数名を許可
+  camelcase:
+    - error
+    - properties: always
+      ignoreDestructuring: true
+  # 警告レベルに変更
+  no-console: warn
+  # 警告レベルに変更
+  '@typescript-eslint/no-unused-vars':
+    - warn
+    - args: after-used
+  # 自明な型付けに警告する
+  '@typescript-eslint/no-inferrable-types': warn
+overrides:
+  - files: ['*.vue']
+    rules:
+      # nuxt-property-decoratorのために無効化
+      class-methods-use-this: 'off'

@@ -44,7 +44,7 @@
   "scripts": {
     "build": "nuxt-ts build",
     "dev": "nuxt-ts",
-    "lint:css": "stylelint \"**/*.{css,sass,scss}\"",
+    "lint:css": "stylelint \"**/*.{css,sass,scss,vue}\"",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue .",
     "start": "nuxt-ts start"
   }

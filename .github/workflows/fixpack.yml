@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Install fixpack
-        run: yarn global add fixpack
+      - name: Install dependencies
+        run: yarn install
       - name: Run fixpack
         run: fixpack
       - name: Commit and Push

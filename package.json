@@ -12,6 +12,8 @@
     "email": "lollipop@simochee.net"
   },
   "devDependencies": {
+    "@nuxt/types": "^0.7.7",
+    "@nuxt/typescript-build": "^1.0.1",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -35,5 +37,9 @@
   "scripts": {
     "lint:css": "stylelint \"**/*.{css,sass,scss}\"",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.vue ."
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.4.8",
+    "nuxt": "^2.12.2"
   }
 }

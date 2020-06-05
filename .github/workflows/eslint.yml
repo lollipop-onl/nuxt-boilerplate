@@ -4,7 +4,7 @@ on:
     paths:
       - '**.{js,jsx,ts,tsx,vue}'
       - '.eslintignore'
-      - '.eslintrc.yml'
+      - '.eslintrc'
 
 jobs:
   build:

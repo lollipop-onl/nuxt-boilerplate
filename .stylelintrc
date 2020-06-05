@@ -1,0 +1,12 @@
+extends:
+  - stylelint-config-standard
+plugins:
+  - stylelint-scss
+rules:
+  # シングルクォーテーションに統一する
+  string-quotes: single
+  # SFCで空のstyleタグを許容する
+  no-empty-source: null
+  # Sass独自の@ルールを許容する
+  at-rule-no-unknown: null
+  scss/at-rule-no-unknown: true

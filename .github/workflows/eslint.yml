@@ -1,22 +1,21 @@
-name: Run fixpack
+name: Lint check of JavaScript
 on:
   push:
     paths:
-      - package.json
+      - '**.{js,jsx,ts,tsx,vue}'
+      - '.eslintignore'
+      - '.eslintrc.yml'
+
 jobs:
-  fixpack:
-    name: fixpack
+  build:
+    name: ESLint
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Install fixpack
-        run: yarn global add fixpack
-      - name: Run fixpack
-        run: fixpack
+      - run: yarn install
+      - run: yarn run lintjs:fix --max-warnings 0
       - name: Commit and Push
         run: |
           git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
@@ -25,7 +24,7 @@ jobs:
 
           if (git diff --shortstat | grep '[0-9]'); then \
             git add .; \
-            git commit -m "🔨 Fixed package.json formats"; \
+            git commit -m "👕 Fixed auto-fixable ESLint errors by github-actions"; \
             git push origin HEAD:${GITHUB_REF}; \
           fi
         env:

@@ -9,6 +9,7 @@ on:
       - '**.vue'
       - .eslintignore
       - .eslintrc
+      - .prettierrc
       - .github/workflows/eslint.yml
 
 jobs:

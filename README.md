@@ -1,6 +1,6 @@
 # Nuxt.js boilerplate by lollipop.onl
 
-simochee <a href="https://twitter.com/lollipop_onl">lollipop_onl</a> によるNuxt.jsのボイラープレートです。
+simochee <a href="https://twitter.com/lollipop_onl" target="_blank">@lollipop_onl</a> によるNuxt.jsのボイラープレートです。
 
 ## Features
 
